@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="description" content="" />
+		<link rel="icon" href="./favicon.png" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta http-equiv="content-security-policy" content=""><title>Methodology</title>
+	<link rel="stylesheet" href="/_app/immutable/assets/pages/__layout.svelte-1f449806.css">
+	<link rel="stylesheet" href="/_app/immutable/assets/ListLink-b26b3b7d.css">
+	<link rel="stylesheet" href="/_app/immutable/assets/pages/about.svelte-1ed916cc.css">
+	</head>
+	<body>
+		<div>
+
+
+<div class="theme-light svelte-fcrvln background"><nav class="page-menu container svelte-1wbep3w"><div class="wrapper grid svelte-1wbep3w"><h1 class="svelte-1wbep3w">Provide</h1>
+      <ul class="menu-main svelte-1wbep3w"><li class="list-link--default svelte-qcdrp6"><a class="link svelte-qcdrp6" href="/" aria-current="false" aria-disabled="false">Home</a>
+</li>
+        <li class="list-link--default svelte-qcdrp6"><a class="link svelte-qcdrp6" href="/explore/impacts" aria-current="false" aria-disabled="false">Explore
+        </a>
+</li>
+        <li class="list-link--default svelte-qcdrp6"><a class="link svelte-qcdrp6" href="/about" aria-current="false" aria-disabled="false">About</a>
+</li>
+        <li class="list-link--default svelte-qcdrp6  active"><a class="link svelte-qcdrp6" href="/methodology" aria-current="page" aria-disabled="false">Methodology</a>
+</li>
+        <li class="list-link--default svelte-qcdrp6"><a class="link svelte-qcdrp6" href="/glossary" aria-current="false" aria-disabled="false">Glossary</a>
+</li>
+        <li class="list-link--default svelte-qcdrp6"><a class="link svelte-qcdrp6" href="/contact" aria-current="false" aria-disabled="false">Contact</a>
+</li></ul></div></nav>
+  <main class="page-main container">
+
+<div class="technical-documentation-header content-header container"><div class="wrapper"><h1 class="title">Methodology</h1>
+    <nav><ul class="nav-inpage subcategories"><li><a href="#models" class="nav-headline-section">Models</a>
+          <ul><li><a href="#fa-ir">FaIR</a></li><li><a href="#mesmer">MESMER</a></li></ul></li>
+        <li><a href="#scenarios" class="nav-headline-section">Scenarios</a>
+          <ul><li><a href="#scenarios-defined-by-the-ipcc-wg-iii-for-ar-6">Scenarios defined by the IPCC WG III for AR6</a></li><li><a href="#scenarios-defined-as-part-of-cmip-6">Scenarios defined as part of CMIP6</a></li><li><a href="#the-stabilisation-at-1-5-c-scenario">The ‘Stabilisation at 1.5°C’ scenario</a></li><li><a href="#list-of-individual-scenario-descriptions">List of individual scenario descriptions</a></li></ul></li>
+        </ul></nav></div></div>
+
+<div class="technical-documentation-content content-content container"><div class="wrapper content-layout"><section><header><h2 id="models" class="headline-section">Models</h2></header>
+      <div class="text"><!-- HTML_TAG_START --><p>The projections of climate impacts that are visualised on this tool were computed with numerical models (algorithms). These models describe the evolution of human or natural systems under different global warming scenarios by solving a range of mathematical equations. One characteristic of the PROVIDE project is that it largely makes use of emulators, that is, relatively simple models that imitate the behaviour of more complex ones. Their simplicity also means that they require less computing power, thus allowing to explore more scenarios or to conduct multiple runs to more finely distinguish actual impacts from the noise induced by natural variations.</p>
+<!-- HTML_TAG_END -->
+        <h3 id="fa-ir" class="headline-paragraph">FaIR</h3>
+          <!-- HTML_TAG_START --><p>FaIR is a simple climate model, replicating the warming behaviour of more complex climate models without the computational complexity. It simplifies the Earth system to consist of a few boxes, which may be interpreted as deep earth, deep ocean, the biosphere and the ocean mixed layer. The levels of carbon in each layer are influenced by emissions, both human and natural. Both human and natural non-CO2 emissions influence the level of greenhouse gases and short-lived aerosols in the biosphere only. A simple model for the behaviour of these emissions gives concentrations of forcers, which combines with estimates of other forcings (such as cloud-formation from aviation, solar variability and land use reflectiveness changes) to give a model of the strength of forcing. This is then used to calculate the change in the Earth’s temperature. The many parameters required by these relationships are constrained to match both historic warming and the expected levels of future warming in idealised experiments agreed on in the IPCC assessment (<a href="https://www.ipcc.ch/report/ar6/wg1/downloads/report/IPCC_AR6_WGI_Chapter07.pdf">cross-chapter box 7 of WG1 chapter 5</a>). We used FaIR version 1.6.4. For more details see <a href="https://gmd.copernicus.org/articles/11/2273/2018/">Smith et al. 2018</a>.
+<br />
+<br /></p>
+<!-- HTML_TAG_END -->
+          <h3 id="mesmer" class="headline-paragraph">MESMER</h3>
+          <!-- HTML_TAG_START --><p>The Modular Earth System Model Emulator with spatially Resolved output (MESMER) is a statistical model that simulates the possible evolution of key climate variables over land areas for a given Global Mean Temperature (GMT) trajectory, by mimicking (or emulating) the behaviour from more computationally expensive Earth System Models (ESMs). Calibrated on existing scenario projections produced by ESMs, it combines estimates of the local forced response of the climate variable of interest (its trend in response to increasing emissions) as well as of the impact of natural climate variability. Its simplicity and flexibility allow it to produce very robust estimates of future possible climate outcomes within minutes, even for GMT trajectories it hasn&#39;t been trained on. Key scientific publications on MESMER are for example <a href="https://esd.copernicus.org/articles/11/139/2020/">Beusch et al. (2020)</a>, <a href="https://gmd.copernicus.org/articles/15/2085/2022/gmd-15-2085-2022.html">Beusch et al. (2022)</a>, or <a href="https://esd.copernicus.org/articles/13/851/2022/esd-13-851-2022.html">Nath et al. (2022)</a>.</p>
+<!-- HTML_TAG_END -->
+          <a href="https://mesmer-emulator.readthedocs.io/en/latest/" class="link">More information about MESMER</a></div></section>
+    <section><header><h2 id="scenarios" class="headline-section">Scenarios</h2></header>
+      <div class="text"><!-- HTML_TAG_START --><p>Information on future climate impacts is commonly produced and provided for scenarios defined by their greenhouse gas emissions or concentrations trajectories. While the evolution of global mean temperature (GMT) that these trajectories are leading to is a more direct driver of climate impacts, depending on the employed climate model there is considerable uncertainty on how GMT responds to emissions (a measure called climate sensitivity). Moreover, scenarios used for impact assessments are often not related to implemented climate policies, nor to policy objectives such as from the Paris Agreement. Furthermore, although temperature overshoots feature prominently in the literature on mitigation pathways, their implications for impacts have so far been under-researched. Finally, because climate and climate impact models are often complex and thus expensive to run, impacts are commonly calculated for a limited number of scenarios, and few ensemble members can be run to assess the influence of natural variability for one single scenario.</p>
+<p>In the PROVIDE project, a core idea of the scenario design is that GMT is the defining feature for assessing climate impacts. This means that we select scenarios that span a range of GMT outcomes with regard to near-term warming, peak warming, and overshoot, according to our best understanding of climate sensitivity and associated uncertainty. We make sure to include some scenarios that reflect currently implemented or formulated policies, or that align with the long term temperature goal of the Paris Agreement. We consider scenarios that remain below the 1.5°C warming limit of the Paris Agreement or overshoot it by various extents, with some exhibiting a decrease in GMT after reaching peak warming, or not. Finally, because impact assessment in the PROVIDE project mostly relies on a suite of lightweight climate or climate impact model emulators, we can explore up to 10 scenarios.</p>
+<p>Eventually, the 10 PROVIDE scenarios for which resulting climate impacts can be explored in the Climate Risk Dashboard can help address the following research questions, which were kept in mind during the scenario selection and design process: </p>
+<ul>
+<li>What is the difference between (a) permanently exceeding 1.5°C and stabilising at a higher level, (b) stabilising at 1.5°C of warming, (c) peaking above 1.5°C and returning to 1.5°C in either 2100 or 2300?</li>
+<li>What is the difference between following current trends until 2100 and a 1.5°C-compatible world?</li>
+<li>Assuming current policies until 2100, how much can temperatures be reversed until 2300?</li>
+<li>What are the differences in societal risk for similar 1.5°C compatible pathways?</li>
+<li>What can be said about the emergence of avoided climate risks in the near-term? What’s the range of different climate risks outcomes in 2050 – a timescale relevant for climate adaptation?</li>
+<li>What are long-term (multi-century) climate outcomes from achieving and sustaining net zero greenhouse gas emissions?
+Is climate change fully reversible?</li>
+<li>How does impact and overshoot reversibility depend on different levels of peak warming? <br /><br /><br /></li>
+</ul>
+<!-- HTML_TAG_END -->
+        <h3 id="scenarios-defined-by-the-ipcc-wg-iii-for-ar-6" class="headline-paragraph">Scenarios defined by the IPCC Working Group III for AR6</h3>
+          <!-- HTML_TAG_START --><p><em>Most information included in this section is adapted from Section 1.5 of Chapter 1 of the IPCC Working Group III (WG3) contribution to AR6 (<a href="https://www.ipcc.ch/report/ar6/wg3/">IPCC AR6 WG3</a> Ch1 | 2022, Grubb et al., 2022).</em></p>
+<p>For AR6, the IPCC WG III considered more than 2500 model-based scenarios published in the scientific literature. Drawing from this database, five so-called Illustrative Mitigation Pathways (IMPs) were defined for the report to illustrate different possible global mitigation strategies that are recurrent across the entire WG III assessment. Additionally, two scenarios were selected from the database that illustrate the consequences of current climate policies and pledges. Originally defined for their characteristics with regard to global mitigation, these seven scenarios are re-used in the PROVIDE project so that resulting impacts can be assessed and compared. More information on them is provided in this section.</p>
+<p>The PROVIDE scenarios based on the five Illustrative Mitigation Pathways are:</p>
+<ul>
+<li>1.5 - Shifting Pathway (short, SP) </li>
+<li>1.5 - High Renewables (Ren) </li>
+<li>1.5 - Low Demand (LD)</li>
+<li>High Negative Emissions (Neg) </li>
+<li>Delayed Action (DA)</li>
+</ul>
+<p>In AR6 these were originally called IMP-SP, IMP-Ren, IMP-LD, IMP-Neg, and IMP-GS, respectively. The five IMPs are organised around two dimensions: the level of ambition consistent with meeting the Paris Agreement goals and key characteristics of the scenario related to mitigation strategies (for example, high levels of renewables deployment). </p>
+<p>DA exhibits the lowest level of ambition of the five; it follows current policies until 2030 but could stay below 2°C if followed by very fast emissions cutbacks. The Neg scenario is characterised by somewhat higher emission reductions by 2030, and a significant decrease in GMT in the second half of the 21st century achieved through the large-scale deployment of Carbon Dioxide Removal technologies in the energy and industry sectors leading to net global emissions. According to the best estimate of the calculations conducted with the FaIR climate model emulator, this decrease in GMT would bring global warming back to below 1.5°C after significant overshoot.</p>
+<p>SP, Ren and LD illustrate other key characteristics related to mitigation strategies and all achieve rapid emission reductions in the short-term, which would keep global warming close to the 1.5°C limit of the Paris Agreement without large overshoot. A key mitigation strategy featured in LD is exploiting opportunities for demand reduction. Ren shows how transforming energy systems through upscaling electrification and renewable energy penetration can also achieve massive emission reductions. In contrast, SP explores how shifting development pathways to achieve sustainable development goals can also result in deep emission reductions.</p>
+<p>Apart from the IMPs, Current Policies (CurPol) was designed to investigate the outcomes of climate policies implemented in 2020, in case they only get gradually strengthened after 2030. The NDCs Pathway (NDC), originally called Moderate Action by the IPCC, explores the consequences of the implementation of the Nationally Determined Contributions to 2030 and no further reinforcement of climate policies thereafter. Both scenarios result in Global Mean Temperature levels above 2°C. </p>
+<p>These seven scenarios are meant to illustrate a range of climate futures linked to future emissions reductions. They also show that there are several ways to achieve the long-term temperature goal of the Paris Agreement. However, these scenarios are not intended to be comprehensive, and do not aim at illustrating the range of possible themes in the IPCC WG3 contribution to AR6. They are primarily scenarios of technological evolution and demand shifts that echo various global trends in societal choice. This means that they do not aim at capturing the whole range of possible future socioeconomic pathways and their consequences for mitigation, at reflecting regional variations in development and climate action, nor do they explore issues around income distribution and environmental justice. </p>
+<p>Nevertheless, selecting these scenarios on the PROVIDE Dashboard offers a good basis to explore impacts resulting from the GMT outcomes they would lead to, ultimately linked to the ability of the world’s individuals and societies to cut back greenhouse gas emissions. Because they span a range of possible climate futures, they are also helpful to approximate impacts from other scenarios defined by other characteristics with regard to global mitigation, but leading to similar outcomes in terms of emissions and resulting global warming.</p>
+<!-- HTML_TAG_END --><h3 id="scenarios-defined-as-part-of-cmip-6" class="headline-paragraph">Scenarios defined as part of phase six of the Coupled Model Intercomparison Project (CMIP6)</h3>
+          <!-- HTML_TAG_START --><p><em>Most information included in this section is adapted from the paper by O’Neill et al., 2016. For more extensive information, please refer to this document.</em></p>
+<p>The scenarios ssp1-1.9 and ssp5-3.4-OS were defined as part of Phase 6 of the Coupled Model Intercomparison Project (CMIP6). This numerical experiment was designed to compare climate projections of various climate models for a common set of greenhouse gas emissions or concentration scenarios. The resulting climate and climate impact projections have been described in many peer-reviewed studies. Given their prominence in the climate and climate impact modelling community, they are being considered under the PROVIDE project to provide an easy way to compare our results to previously published ones.</p>
+<p>Both ssp1-1.9 and ssp5-3.4-OS are driven by emissions and land use trajectories produced with integrated assessment models (IAMs) based on future pathways of societal development, the shared socioeconomic pathways (SSPs, see Riahi et al., 2016). There are five SSPs in total, which follow distinct broad narratives and describe potential futures in which challenges for adaptation and mitigation vary from low to high:</p>
+<ul>
+<li>SSP1: Sustainability (taking the green road, low challenges to mitigation and adaptation)</li>
+<li>SSP2: Middle of the road (medium challenges to mitigation and adaptation)</li>
+<li>SSP3: Regional rivalry (a rocky road, high challenges to mitigation and adaptation)</li>
+<li>SSP4: Inequality (a road divided, low challenges to mitigation, high challenges to adaptation)</li>
+<li>SSP5: Fossil-fueled development (taking the highway, high challenges to mitigation, low challenges to adaptation)</li>
+</ul>
+<p>The narratives of SSP1 and SSP5 were used as a basis to derive the emissions trajectories for ssp1-1.9 and ssp5-3.4-OS, respectively.</p>
+<p>ssp1-1.9 and ssp5-3.4-OS are also related to representative concentration pathways (RCPs; van Vuuren et al., 2011), a set of pathways of land use emissions and emissions of air pollutants and greenhouse gases that span a wide range of future outcomes through 2100 and have commonly been used in the climate modelling community.</p>
+<p>Produced within CMIP5 using IAMs, their use was central for climate science research conducted during the IPCC Fifth Assessment Report (AR5) cycle. The change in energy flux in the atmosphere due to human activities (called radiative forcing and expressed in W/m2) achieved at the end of the 21st century and relative to pre-industrial levels, define the RCPs as well as the SSP-RCP combinations: for example 1.9 W/m2 for ssp1-1.9 and 3.4 W/m2 for ssp5-3.4-OS.</p>
+<p>Because it doesn’t exceed relatively low radiative forcing values along the 21st century, ssp1-1.9 is considered as being compatible with the long-term temperature goal of the Paris Agreement (keeping the global mean temperature increase compared to pre-industrial levels well below 2°C, and bringing it back down to below 1.5°C by 2100).</p>
+<p>ssp5-3.4-OS investigates the implications of a substantial 21st century overshoot in radiative forcing relative to a longer-term target. This scenario follows SSP5-8.5 through 2040, at which point aggressive mitigation is undertaken to rapidly reduce emissions to zero by about 2070 and to net negative levels thereafter. Such a level of mitigation would be more ambitious than what is happening in most high-ambition scenarios simulated with IAMs, and is thus deemed unfeasible. However, ssp5-3.4-OS provides a way to explore the consequences of such colossal variations for the climate system.</p>
+<!-- HTML_TAG_END --><h3 id="the-stabilisation-at-1-5-c-scenario" class="headline-paragraph">The ‘Stabilisation at 1.5°C’ scenario</h3>
+          <!-- HTML_TAG_START --><p>This scenario has been designed through the PROVIDE project. It is meant to assess climate impacts if global mean temperature is held constant at 1.5°C above pre-industrial levels, and how these would differ from other scenarios where global mean temperature would exceed and potentially be brought back down to below this global warming level.</p>
+<!-- HTML_TAG_END --><h3 id="list-of-individual-scenario-descriptions" class="headline-paragraph">List of individual scenario descriptions</h3>
+          <!-- HTML_TAG_START --><p><strong>Current policies</strong>
+This pathway explores the consequences of continuing along the path of implemented climate policies in 2020 with only mild strengthening up to 2100. It originates from the IPCC Sixth Assessment Report (AR6), and illustrates the outcomes of many scenarios in the literature that project the outcomes of current policies.</p>
+<p><strong>Delayed Action</strong>
+Decarbonisation is delayed in earnest to the 2030s, when energy demand is reduced and the transition to variable renewable energy accelerates. Renewable energy never displaces all fossil fuel use – carbon dioxide is captured from the air and buried instead, along with reforestation. This scenario originates from the IPCC Sixth Assessment Report (AR6), in which it is referred to as &#39;Gradual Strengthening&#39;.</p>
+<p><strong>1.5 - shifting pathway</strong>
+This pathway explores how a broader shift towards sustainable development can be combined with climate policies consistent with keeping warming to 1.5˚C. Energy demand is reduced over time, while renewable energy use grows, squeezing out fossil fuel use. This scenario originates from the IPCC Sixth Assessment Report (AR6), where it is referred to as IMP-SP.</p>
+<p><strong>NDCs pathway</strong>
+This pathway explores the impact of countries sticking to their Nationally Determined Contributions (NDCs) as stated in 2020. These are often more ambitious than currently implemented policies, but for most countries do not ratchet up very rapidly. Similar levels of mitigation effort are expected going forwards. This scenario originates from the IPCC Sixth Assessment Report (AR6), in which it is referred to as &#39;Moderate Action&#39;.</p>
+<p><strong>High negative emissions</strong>
+Pathway with highest negative emissions (carbon-removing technology). Fossil fuel use decreases slowly, replaced roughly equally by variable renewable energy and biofuels. The carbon from burning the biofuels is captured and buried, offsetting the continued fossil fuel use. This scenario originates from the IPCC Sixth Assessment Report (AR6), where it is referred to as IMP-NEG.</p>
+<p><strong>1.5 - high renewables</strong>
+Energy demand is reduced rapidly in the short-term, though grows later. Growth in renewables is very rapid and squeezes out most all other types of energy. Some biofuel is used to balance renewable variability, and the emissions from this are captured and buried. This scenario originates from the IPCC Sixth Assessment Report (AR6), where it is referred to as IMP-REN.</p>
+<p><strong>1.5 - low demand</strong>
+Energy demand is massively reduced by implementing energy efficient lifestyles and design, and kept low throughout the century. Renewable energy grows and gradually forces out fossil fuels. This scenario originates from the IPCC Sixth Assessment Report (AR6), where it is referred to as IMP-LD.</p>
+<p><strong>SSP1-1.9</strong>
+Renewable energy is deployed rapidly, energy demand is also limited rapidly. There is general focus on sustainability, but also a significant increase in the amount of biofuel use, with the carbon released captured and stored (negative emissions). This pathway was used a lot for climate science research considered in the IPCC Sixth Assessment Report (AR6).</p>
+<p><strong>SSP5-3.4-OS</strong>
+Carbon emissions rise at an incredibly fast rate in the short term. Then, around 2040 they decline extremely rapidly through extensive use of negative emissions technologies (for example capturing carbon from biofuel burning or directly from the air, and burying it). Such high levels of initial emission increases followed by drastic reductions are deemed unfeasible, but this pathway was designed to test the sensitivity of the Earth System to such extreme changes in emissions and used in particular for climate science research considered in the IPCC Sixth Assessment Report (AR6).</p>
+<p><strong>Stabilisation at 1.5°C</strong>
+Temperatures rise until the global average reaches 1.5°C. The temperature is then held constant. This scenario is a simple thought experiment not driven by economic or climatic considerations.</p>
+<!-- HTML_TAG_END --></div></section>
+    </div>
+</div></main>
+  <footer class="page-footer container svelte-1wbep3w"><div class="wrapper grid"><div class="page-author svelte-1wbep3w"><strong class="svelte-1wbep3w">Provide</strong>
+        <span class="svelte-1wbep3w">Climate Analytics 2022</span></div>
+      <nav class="page-sitemap svelte-1wbep3w"><ul class="svelte-1wbep3w"><li><a href="/about" currentpath="methodology" class="svelte-1wbep3w">About</a></li>
+          <li><a href="/methodology" currentpath="methodology" class="svelte-1wbep3w">Methodology</a></li>
+          <li><a href="/glossary" currentpath="methodology" class="svelte-1wbep3w">Glossary</a></li>
+          <li><a href="/contact" currentpath="methodology" class="svelte-1wbep3w">Contact</a></li></ul></nav></div></footer>
+</div>
+
+</div>
+	</body>
+</html>
